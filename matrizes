@@ -37,3 +37,18 @@ amostra2[2,3]
 # Quais são os elementos de uma determinada coluna.
 
 amostra2[,3]
+
+# Quais são os elementos de uma determinada matriz
+
+amostra2[1,]
+
+# Caso você deseja acessar ao mesmo tempo linhas e colunas. Note que os valores são organizados
+# dinamicamente, mas a matriz amostra2 permanece de forma intacta.
+
+amostra2[1:2, 2:4]
+
+# Caso você deseje alterar as nomenclaturas padrão da matriz, isso pode ser realizado
+# através do comando dimnames.
+
+dimnames(amostra2) <- list(c("Linha1", "Linha2"), c("Coluna1", "Coluna2", "Coluna3", "Coluna4", "Coluna5"))
+amostra2

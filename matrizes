@@ -52,3 +52,29 @@ amostra2[1:2, 2:4]
 
 dimnames(amostra2) <- list(c("Linha1", "Linha2"), c("Coluna1", "Coluna2", "Coluna3", "Coluna4", "Coluna5"))
 amostra2
+
+# Caso você deseje incluir determinados valores em uma matriz com duas colunas, utilize
+# o comando cbind. O número maior de elementos na entrada de argumentos cbind(1argumento,2argumento)
+# definirá a quantidade de elementos.
+
+amostra3 <- cbind(1:3, 10:15)
+
+# Soma dos elementos das linhas da matriz, funções apply e rowSums.
+
+apply(amostra2, 1, sum)
+
+rowSums(amostra2)
+
+# Soma dos elementos das colunas da matriz, funções apply ou colSums.
+
+apply(amostra2, 2, sum)
+
+colSums(amostra2)
+
+# Média dos elementos da coluna de uma matriz.
+
+colMeans(amostra2)
+
+# Média dos elementos da linha de uma matriz.
+
+rowMeans(amostra2)

@@ -1,0 +1,38 @@
+# Matrizes
+# Para criar uma matriz, que inicialmente carrega dados default, basta utilizar o comando
+# matrix. O primeiro argumento da função matrix diz respeito à quantidade de dados, a segunda
+# opção informará a quantidade de colunas em uma determinada matriz, note que automaticamente é
+# estabelecida a quantidade de linhas, sempre deve ser múltiplo a quantidade de dados/número de colunas.
+
+amostra2 <- matrix(1:10, ncol = 5)
+amostra2
+
+# Caso deseje o contrário, que a disposição dos elementos seja registrada nas colunas,
+# utilize o argumento byrow.
+
+amostra3 <- matrix(1:10, ncol = 5, byrow = T)
+amostra3
+
+# Caso deseje saber a quantidade de elementos em uma determinada matriz.
+
+length(amostra2)
+
+# Quantas linhas e colunas há em uma determinada matriz.
+
+dim(amostra2)
+
+# Quantas linhas há em uma determinada matriz
+
+nrow(amostra2)
+
+# Quantas colunas há em uma determinada matriz.
+
+ncol(amostra2)
+
+# Caso deseje acessar um determinada elemento, basta colocar entre [] o número da linha e da coluna.
+
+amostra2[2,3]
+
+# Quais são os elementos de uma determinada coluna.
+
+amostra2[,3]

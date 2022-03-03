@@ -1,3 +1,4 @@
+
 # Matrizes
 # Para criar uma matriz, que inicialmente carrega dados default, basta utilizar o comando
 # matrix. O primeiro argumento da função matrix diz respeito à quantidade de dados, a segunda

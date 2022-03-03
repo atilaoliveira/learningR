@@ -1,3 +1,4 @@
+
 # Fundamentos de R
 # Álgebra Matricial
 
@@ -54,4 +55,19 @@ matrizA
 matrizB <- det(matrix(c(1, -2, 2, 2, 0, 1, 1, 1, -2), 3, 3, byrow = T))
 matrizB
 
-#
+# Inversa de uma matriz e sistemas de equações
+# Criando uma matriz para exemplificar
+
+matriz.A <- matrix(data = 1:4, ncol = 2)
+
+# Uma matriz pode ser considerada inversa quando sua multiplicação pela matriz original
+# resulta na matriz identidade.
+# Usamos a função solve() para calcular a inversa de uma matriz e sistemas de equações lineares.
+
+solve(matriz.A)
+
+# Matriz identidade
+# Executando a multiplicação matricial %*% da matriz inversa original o resultado é a matriz identidade.
+
+matriz.A <- matrix(data = 1:4, ncol = 2)
+solve(matriz.A) %*% matriz.A

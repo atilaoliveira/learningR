@@ -1,0 +1,57 @@
+# Fundamentos de R
+# Álgebra Matricial
+
+# Cria matrizes para exemplificar álgebra matricial
+
+matriz.A <- matrix(data = 1:6, ncol = 3)
+matriz.B <- matrix(data = 7:12, ncol = 3)
+matriz.A
+matriz.B
+
+# Somando matrizes
+# As matrizes devem possuir o mesmo número de linhas e colunas (da mesma ordem)
+# Soma matriz.A com matriz.B
+
+matriz.A + matriz.B
+
+# Subtração de matrizes
+# As matrizes devem possuir o mesmo número de linhas e colunas (da mesma ordem)
+# Subtrai matriz.A da matriz.B
+
+matriz.A - matriz.B
+
+# Multiplicação matricial por escalar
+# Toda matriz, independentemente de sua dimensionalidade (ordem), pode ser multiplicada por
+# um escalar K, de forma que K pertença a R. O escalar é multiplicado por cada elemento da matriz.
+
+7 * matriz.A
+
+# Multiplicação matricial elemento a elemento
+# Não devemos confundir com multiplicação matricial. No caso a seguir, trata-se da multiplicação
+# elemento a elemento
+
+matriz.A * matriz.B
+
+# Multiplicação matricial
+# Uma matriz (nxm) multiplicada por outra matriz (mxp). Sendo que o número de colunas da
+# primeira matriz deve ser igual ao número de linhas da segunda matriz.
+
+matriz.A[,1:2] %*% matriz.B
+
+# Matriz transposta
+# Os elementos das colunas são transpostos para as linhas.
+
+t(matriz.A)
+
+# Determinante de uma matriz
+# Determinante é uma função matricial que associa a cada matriz quadrada um escalar.
+
+# Definimos a variável matrizA que recebe a função det
+matrizA = det(matrix(c(4,6,6,9),2,2, byrow = T))
+matrizA
+
+# Definimos a variável matrizB que recebe a função det
+matrizB <- det(matrix(c(1, -2, 2, 2, 0, 1, 1, 1, -2), 3, 3, byrow = T))
+matrizB
+
+#

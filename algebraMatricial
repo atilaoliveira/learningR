@@ -1,4 +1,3 @@
-
 # Fundamentos de R
 # Álgebra Matricial
 
@@ -71,3 +70,15 @@ solve(matriz.A)
 
 matriz.A <- matrix(data = 1:4, ncol = 2)
 solve(matriz.A) %*% matriz.A
+
+# Traço de uma matriz
+# Soma dos elementos da diagonal principal de uma matriz
+
+matriz.A <- matrix(data = 1:6, ncol = 3)
+sum(diag(matriz.A))
+
+# Autovalores e autovetores de uma matriz
+# Decomposição espectral de uma matriz quadrática diagonalizável em autovalores (valor próprio) e autovetores.
+
+matriz.A <- matrix(data = 1:4, ncol = 2)
+eigen(matriz.A)
